@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #10213f;
+  color: #2f4677;
+  padding: 1.5rem;
+  border-bottom: 2px solid #191f2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-menu a {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  color: #f8f9fa;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+  color: #2f4677;
+}
+#toggle {
+  display: none;
+}
+
+.pipe {
+  border: 2px solid rgb(255, 255, 255);
+  height: 2px;
+  width: 30px;
+}
+
+.ul-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 100%;
+  width: 100%;
+}
+.label {
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+
+footer {
+  padding: 1.5rem;
+  background-color: #10213f;
+  color: #f8f9fa;
+  text-align: center;
+  border-top: 2px solid #000000;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 992px) {
+  header {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    margin-top: 0.5rem;
+  }
+
+  .nav-menu a {
+    margin: 0 0.8rem;
+    font-size: 1rem;
+  }
+
+  .buttons {
+    grid-template-columns: 100vh;
+    grid-template-rows: 50px 50px 50px;
+  }
+
+  button.heart {
+    grid-template-columns: 100vh;
+    grid-template-rows: 50px 50px 50px;
+  }
+
+  main {
+    gap: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .text {
+    margin-bottom: 10vh;
+    font-size: 20px;
+    margin-top: -20vh;
+  }
+
+  img {
+    margin-top: 0;
+  }
+
+  section.description {
+    padding: 0;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.dropdown-btn {
+  background-color: #f9f9f9;
+  color: #0b162b;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px solid #0b162b;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: arial;
+}
+
+a.backtag {
+  font-size: 10px;
+  color: #47477c;
+}
+
+.back {
+  padding: 19px;
+}
+
+.dropdown-btn:hover {
+  background-color: #0b162b;
+  color: #f9f9f9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  color: rgb(28, 43, 85);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #aabbdb;
+}
+
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-btn:hover + .dropdown-content {
+  display: block;
+}
+
+img {
+  width: 500px;
+  border-radius: 5px;
+  margin-top: 90px;
+  height: 551px;
+}
+
+section.description {
+  padding: 100px;
+}
+
+.text {
+  margin-bottom: 35vh;
+  font-size: 20px;
+}
+
+a.backtag {
+  font-size: 10px;
+  color: #47477c;
+}
+
+.back {
+  padding: 19px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+  gap: 200px;
+}
+
+button.buy {
+  grid-area: 2 / 1 / 2 / 3;
+  color: white;
+  background-color: #23234a;
+  border: none;
+  border-radius: 3px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 200px 50px;
+  grid-template-rows: 40px 40px;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-top: 25px;
+}
+
+button.bag {
+  color: #212138;
+  background-color: white;
+  border: 1px solid #212138;
+  border-radius: 3px;
+}
+
+button.heart {
+  color: white;
+  background-color: #283363;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem;
+  }
+  .nav-menu {
+    display: none;
+    transition: right 0.3s ease;
+  }
+
+  .ul-menu {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 45px;
+  }
+
+  .label {
+    display: block;
+    cursor: pointer;
+  }
+  #toggle:checked ~ .nav-menu {
+    display: block;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    top: 60px;
+    right: 0px;
+    background-color: #10213f;
+    position: absolute;
+    z-index: 10000;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    width: auto;
+  }
+}

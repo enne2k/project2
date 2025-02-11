@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="">
+        <h2>COVESTORE</h2>
+      </a>
+      <label class="label" for="toggle">
+        <div class="menu-icon">
+          <span class="pipe"></span>
+          <span class="pipe"></span>
+          <span class="pipe"></span>
+        </div>
+      </label>
+      <input type="checkbox" id="toggle" name="toggle" />
+      <nav class="nav-menu">
+        <ul class="ul-menu">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../pages/products.html">PRODUCTS</a></li>
+          <li><a href="../pages/about.html">ABOUT</a></li>
+          <li><a href="../pages/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-form">
+        <form>
+          <div class="form-inputs">
+            <div class="input-form">
+              <label for="name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first_name" />
+            </div>
+            <div class="input-form">
+              <label for="name">LAST NAME</label>
+              <input type="text" id="last-name" name="last_name" />
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="input-form">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" />
+            </div>
+            <div class="input-form">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+          <div class="textarea">
+            <label for="message">WHAT DO YOU HAVE IN MIND</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button>SUBMIT</button>
+        </form>
+      </section>
+
+      <div class="line"></div>
+
+      <section class="contact-text">
+        <h1>contact us</h1>
+        <p class="paragraph">
+          Need help with an order or have a concern? Our support team is here to
+          assist you. Just fill out the form, and we'll reach out shortly!
+        </p>
+
+        <div class="contacts">
+          <img
+            class="contact-svg"
+            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg"
+          />
+          <p class="contact-text">+995 597-356-050</p>
+        </div>
+
+        <div class="contacts">
+          <img
+            class="contact-svg"
+            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg"
+          />
+          <p class="contact-text">covestore@gmail.com</p>
+        </div>
+
+        <div class="contacts">
+          <img
+            class="contact-svg"
+            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg"
+          />
+          <p class="contact-text">tbilisi,georgia</p>
+        </div>
+
+        <div class="social-media-links">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Covestore. All rights reserved.</p>
+      <p>Designed for you with love by Covestore Team</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #10213f;
+  color: #2f4677;
+  padding: 1.5rem;
+  border-bottom: 2px solid #191f2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-menu a {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  color: #f8f9fa;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+  color: #2f4677;
+}
+#toggle {
+  display: none;
+}
+
+.pipe {
+  border: 2px solid rgb(255, 255, 255);
+  height: 2px;
+  width: 30px;
+}
+
+.ul-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 100%;
+  width: 100%;
+}
+.label {
+  height: 40px;
+  width: 40px;
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+  padding-bottom: 50vh;
+}
+
+.contacts {
+  display: flex;
+  padding-top: 20px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact-text {
+  width: 400px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+p.contact-text {
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 17px;
+  font-family: arial;
+  color: #34345a;
+}
+
+.input-form {
+  display: flex;
+}
+
+input {
+  width: 200px;
+  height: 50px;
+  background-color: #f9f9f9;
+  border: 2px solid #10213f;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 50px;
+  padding: 20px;
+}
+
+textarea#message {
+  border: 2px solid #10213f;
+  width: 451px;
+  height: 118px;
+  resize: none;
+  background-color: #f9f9f9;
+}
+
+.textarea {
+  margin-left: 3%;
+}
+
+label {
+  font-family: arial;
+  font-weight: 590;
+  color: #10213f;
+}
+
+button {
+  height: 60px;
+  width: 451px;
+  font-size: 15px;
+  background-color: #10213f;
+  color: white;
+  border: 3px solid #10213f;
+  margin-left: 3%;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #3a3a64;
+}
+
+p.paragraph {
+  font-size: 17px;
+  font-family: arial;
+  color: #4f4f74;
+}
+
+section.contact-text {
+  width: 400px;
+}
+
+.social-media-links {
+  display: none;
+}
+
+footer {
+  padding: 1.5rem;
+  background-color: #10213f;
+  color: #f8f9fa;
+  text-align: center;
+  border-top: 2px solid #000000;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 992px) {
+  header {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    margin-top: 0.5rem;
+  }
+
+  .nav-menu a {
+    margin: 0 0.8rem;
+    font-size: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 60px;
+    align-items: center;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  input,
+  textarea#message,
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  .nav-menu {
+    display: none;
+    transition: right 0.3s ease;
+  }
+
+  .ul-menu {
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 45px;
+  }
+
+  .label {
+    display: block;
+    cursor: pointer;
+  }
+  #toggle:checked ~ .nav-menu {
+    display: block;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    top: 60px;
+    right: 0px;
+    background-color: #10213f;
+    position: absolute;
+    z-index: 10000;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 1.2rem;
+  }
+
+  .contact-text {
+    width: 350px;
+  }
+
+  .form-inputs {
+    gap: 40px;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .contact-text {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .form-inputs {
+    gap: 15px;
+  }
+
+  input,
+  textarea#message,
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    height: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  p.contact-text {
+    font-size: 15px;
+  }
+
+  input,
+  textarea#message,
+  button {
+    font-size: 12px;
+  }
+}
