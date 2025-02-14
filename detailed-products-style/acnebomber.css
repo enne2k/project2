@@ -102,13 +102,13 @@ footer p {
   }
 
   .buttons {
-    grid-template-columns: 100vh;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-rows: 40px 40px 40px;
+    grid-template-columns: 400px;
+    margin-top: 5px;
   }
 
-  button.heart {
-    grid-template-columns: 100vh;
-    grid-template-rows: 50px 50px 50px;
+  button.buy {
+    grid-area: none;
   }
 
   main {
@@ -190,7 +190,6 @@ a.backtag {
 }
 
 img {
-  width: 500px;
   border-radius: 5px;
   margin-top: 90px;
   height: 551px;
