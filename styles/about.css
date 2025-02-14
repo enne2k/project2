@@ -128,6 +128,7 @@ section.about-section2 {
 
 p {
   color: #4f4d6d;
+  width: 250px;
 }
 
 h2 {
@@ -188,6 +189,11 @@ section.about-section4 {
 
   h1 {
     font-size: 30px;
+    margin-bottom: 100px;
+  }
+
+  .about-section {
+    text-align: center;
   }
 
   h3,
@@ -197,7 +203,6 @@ section.about-section4 {
 
   ul {
     padding: 20px;
-    width: 350px;
   }
 }
 
